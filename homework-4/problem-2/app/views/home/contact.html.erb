@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "application.css" %>
+
+<%= form_tag('/thank') do %>
+  <%= label_tag(:title) %> <br>
+  <%= text_field_tag(:title) %> <br>
+  <%= label_tag(:name) %> <br>
+  <%= text_field_tag(:name) %> <br>
+  <%= label_tag(:lastname) %> <br>
+  <%= text_field_tag(:lastname) %> <br>
+  <%= label_tag(:email) %><br>
+  <%= text_field_tag(:email)%><br>
+   <%= label_tag(:comment) %> <br>
+   <%= text_area_tag(:comment)%> <br>
+  
+  <%= submit_tag %>
+  <%end%>
+
