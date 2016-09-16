@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weight: 
+  dimension: MyString
+  condition: MyString
+
+two:
+  weight: 
+  dimension: MyString
+  condition: MyString

@@ -1,0 +1,13 @@
+<h1>Edit</h1>
+
+<%=form_for(@Item) do |f| %>
+  <p><%= f.label(:name)%></p>
+  <p><%= f.text_field(:name)%></p>
+  <P><%= f.label(:quantity)%></P>
+  <p><%= f.text_field(:quantity)%></p>
+  <p><%= f.label(:price)%></p>
+  <p><%= f.text_field(:price)%></p>
+
+  <%= f.submit('Submit')%>
+ 
+<%end%>

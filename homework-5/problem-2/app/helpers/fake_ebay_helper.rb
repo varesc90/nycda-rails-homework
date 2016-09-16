@@ -1,0 +1,2 @@
+module FakeEbayHelper
+end
