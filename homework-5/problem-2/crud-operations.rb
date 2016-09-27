@@ -10,3 +10,4 @@ Item.count
 Item.create(name:'Samsung Galaxy s7', quantity: 3, price: 860)
 Item.last
 Item.last.delete
+Item.find(15).name
