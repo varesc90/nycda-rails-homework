@@ -1,0 +1,8 @@
+<h1>List of all users</h1>
+
+<% @users.each do |user| %>
+
+<h3><%=link_to(user.name,user)%></h3>
+<p><%=user.headline%></p>
+
+<%end%>

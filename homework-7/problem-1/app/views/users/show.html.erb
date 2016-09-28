@@ -1,0 +1,9 @@
+<h1>Show</h1>
+<p>Name     : <%=@user.name%></p>
+<p>Email    : <%=@user.email%></p>
+<p>Headline : <%=@user.headline%></p>
+<p>Profile  : <%=@user.profile%></p>
+
+<% if @user == current_user || current_user.admin? %>
+<%=link_to('Edit',edit_user_path(@user))%>
+<%end%>
