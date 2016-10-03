@@ -12,8 +12,8 @@ class Hotel < ActiveRecord::Base
 										storage: :s3,
 										s3_region: 'us-east-1',
 										s3_credentials: {bucket: "vares-hotel-pics",
-														 access_key_id: "AKIAIKLEEYZ3SR3Y6HTA",
-										                 secret_access_key: "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"})
+														 access_key_id: "",
+										                 secret_access_key: ""})
 
 	validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/
 end
