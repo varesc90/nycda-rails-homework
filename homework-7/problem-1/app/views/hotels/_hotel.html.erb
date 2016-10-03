@@ -1,0 +1,13 @@
+
+<p>Name: <%=link_to(hotel.name,hotel_path(hotel.id))%></p>
+<p>Detail: <%=hotel.description%></p>
+<p>Location: <%=hotel.location%></p>
+<p>Post by: <%=link_to(hotel.user.name,hotel.user)%></p>
+<%if user_signed_in?%>
+	<%if current_user.admin?||current_user == hotel.user%>
+	<%=link_to('Edit',edit_hotel_path(hotel))%> <%=link_to('Delete', hotel, method: :delete)%>
+	<%end%>
+<%end%><br>
+<%= image_tag(hotel.photo.url,class: "hotel_image")%>
+
+

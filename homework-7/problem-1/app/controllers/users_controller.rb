@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
 	def show
 		finduser
+		@hotels = @user.hotels
 	end
 
 	def edit

@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-
+has_many(:hotels)
 validates(:name, presence: true)
 validates(:headline, presence: true)
 validates(:profile, presence: true)
